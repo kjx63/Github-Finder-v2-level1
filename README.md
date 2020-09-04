@@ -16,6 +16,9 @@ Level: ⭐️
 
 5. Search user
 
+- GET /search/users
+- [Docs](https://developer.github.com/v3/search/#search-users)
+
 ---
 
 ### Features
@@ -34,6 +37,7 @@ Level: ⭐️
   - process.env.
 
 - Search Username
+  - Pass up this.state.text from Search Component to the App.js through props (18)
 
 ---
 

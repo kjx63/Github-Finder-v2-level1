@@ -17,24 +17,25 @@ class App extends Component {
     loading: false,
   };
 
-  async componentDidMount() {
+  // Search Github Users
+  searchUsers = async (text) => {
     this.setState({
       loading: true,
     });
-    const res = await github.get('/users');
-
+    const res = await github.get(`/search/users?q=${text}`);
+    console.log(res.data);
     this.setState({
-      users: res.data,
+      users: res.data.items,
       loading: false,
     });
-  }
+  };
 
   render() {
     return (
       <div>
         <Navbar />
         <div className='container'>
-          <Search />
+          <Search searchUsers={this.searchUsers} />
           <Users loading={this.state.loading} users={this.state.users} />
         </div>
       </div>
