@@ -14,6 +14,8 @@ Level: ⭐️
 
 4. Create App level (users and loading )state and Fetch users (from Github Users API) to the Users Component (pass in as a prop)
 
+5. Search user
+
 ---
 
 ### Features
@@ -28,7 +30,10 @@ Level: ⭐️
   - componentDidMount(){}
 - Axios (14)
 - Environment Variables (16)
+
   - process.env.
+
+- Search Username
 
 ---
 
