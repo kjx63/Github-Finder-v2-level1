@@ -8,10 +8,13 @@ Functions
 
 ### Features
 
-- class-based Component
-- defaultProps
-- PropTypes : typeChecking
+- class-based Component (11)
+- defaultProps (10)
+- PropTypes : typeChecking (10)
+- Store in the classbased component-level state
 
 ### Component
 
 - Navbar
+- user
+  - UserItem
