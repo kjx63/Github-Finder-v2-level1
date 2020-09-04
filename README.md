@@ -6,6 +6,12 @@ Level: ⭐️
 
 Functions
 
-Features
+### Features
 
 - class-based Component
+- defaultProps
+- PropTypes : typeChecking
+
+### Component
+
+- Navbar
