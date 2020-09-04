@@ -11,7 +11,7 @@ Functions
 - class-based Component (11)
 - defaultProps (10)
 - PropTypes : typeChecking (10)
-- Store in the classbased component-level state
+- Store in the classbased component-level state (12)
 
 ### Component
 
