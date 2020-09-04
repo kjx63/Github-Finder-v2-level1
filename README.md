@@ -36,14 +36,16 @@ Level: ⭐️
 
   - process.env.
 
-- Search Username
+- Search Username and render them
   - Pass up this.state.text from Search Component to the App.js through props (18)
+- Clear Users with Button(19)
 
 ---
 
 ### Component
 
 - Navbar
+- Search
 - user
   - UserItem
   - Users
