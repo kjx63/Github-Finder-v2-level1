@@ -4,6 +4,8 @@ Source: https://www.udemy.com/course/modern-react-front-to-back/learn/lecture/14
 
 Level: ⭐️
 
+---
+
 ### Description
 
 1. Starts with the class-based components
@@ -11,6 +13,8 @@ Level: ⭐️
 3. Store users state in an App level state (Because we don't have the centralised store(like redux, context API))
 
 4. Create App level (users and loading )state and Fetch users (from Github Users API) to the Users Component (pass in as a prop)
+
+---
 
 ### Features
 
@@ -23,12 +27,19 @@ Level: ⭐️
 - LifeCycleMethod (14)
   - componentDidMount(){}
 - Axios (14)
+- Environment Variables (16)
+  - process.env.
+
+---
 
 ### Component
 
 - Navbar
 - user
   - UserItem
+  - Users
+
+---
 
 ### API
 
