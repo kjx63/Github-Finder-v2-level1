@@ -39,6 +39,9 @@ Level: ⭐️
 - Search Username and render them
   - Pass up this.state.text from Search Component to the App.js through props (18)
 - Clear Users with Button(19)
+- Alert system (20)
+  - Render Alert just below the Nav component when submitting the form without any imput.
+  - SetTimeout to clear the alert after 3 seconds
 
 ---
 
