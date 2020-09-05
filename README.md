@@ -42,6 +42,10 @@ Level: ⭐️
 - Alert system (20)
   - Render Alert just below the Nav component when submitting the form without any imput.
   - SetTimeout to clear the alert after 3 seconds
+- React Router (21)
+  - [Docs](https://www.npmjs.com/package/react-router-dom)
+  - `npm install --save react-router-dom`
+  - `import { BrowserRouter, Route, Link } from "react-router-dom";`
 
 ---
 
