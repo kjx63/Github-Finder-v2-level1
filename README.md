@@ -48,8 +48,9 @@ Level: ⭐️
   - `npm install --save react-router-dom`
   - `import { BrowserRouter, Route, Link } from "react-router-dom";`
 
-- Get single user from Users component
+- Get single user from Users component (22) 🔥 🔥 🔥
   - When clicking more, it renders to the '/user/:login'
+  - props.match.params.
 
 ---
 
