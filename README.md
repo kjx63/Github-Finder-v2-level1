@@ -1,10 +1,6 @@
-## Github Finder
+## Github Finder (V1)
 
-Source: https://www.udemy.com/course/modern-react-front-to-back/learn/lecture/14969762#overview
-
-Level: ⭐️
-
----
+### Class-based state management
 
 ### Description
 
