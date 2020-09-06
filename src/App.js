@@ -19,6 +19,7 @@ class App extends Component {
   state = {
     users: [],
     user: {},
+    repos: [],
     loading: false,
     alert: null,
   };
@@ -47,6 +48,15 @@ class App extends Component {
     });
   };
 
+  // Get users repos
+  getUserRepos = async (username) => {
+    this.setState({ loading: true });
+    const res = await github.get(
+      `/users/${username}/repos?per_page=5&sort=created:asc`
+    );
+    this.setState({ repos: res.data, loading: false });
+  };
+
   // Cleaer users from state
   clearUsers = () => {
     this.setState({
@@ -65,26 +75,30 @@ class App extends Component {
   };
 
   render() {
-    const { users, loading, user } = this.state;
+    const { users, user, repos, loading } = this.state;
     return (
       <Router>
-        <div>
+        <div className='App'>
           <Navbar />
           <div className='container'>
             <Alert alert={this.state.alert} />
             <Switch>
-              <Route exact path='/'>
-                <Fragment>
-                  <Search
-                    searchUsers={this.searchUsers}
-                    clearUsers={this.clearUsers}
-                    showClear={users.length > 0 ? true : false}
-                    setAlert={this.setAlert}
-                  />
-                  <Users loading={loading} users={users} />
-                </Fragment>
-              </Route>
-              <Route path='/about' component={About} />
+              <Route
+                exact
+                path='/'
+                render={(props) => (
+                  <Fragment>
+                    <Search
+                      searchUsers={this.searchUsers}
+                      clearUsers={this.clearUsers}
+                      showClear={users.length > 0 ? true : false}
+                      setAlert={this.setAlert}
+                    />
+                    <Users loading={loading} users={users} />
+                  </Fragment>
+                )}
+              />
+              <Route exact path='/about' component={About}></Route>
               <Route
                 exact
                 path='/user/:login'
@@ -92,7 +106,9 @@ class App extends Component {
                   <User
                     {...props}
                     getUser={this.getUser}
+                    getUserRepos={this.getUserRepos}
                     user={user}
+                    repos={repos}
                     loading={loading}
                   />
                 )}

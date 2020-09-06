@@ -49,8 +49,12 @@ Level: ⭐️
   - `import { BrowserRouter, Route, Link } from "react-router-dom";`
 
 - Get single user from Users component (22) 🔥 🔥 🔥
+
   - When clicking more, it renders to the '/user/:login'
   - props.match.params.
+
+- Build RepoItem Component(in Repos Component) to render 5 latest repos (24)
+  - API (https://api.github.com/users/kjx63/repos#)
 
 ---
 
